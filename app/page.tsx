@@ -12,6 +12,7 @@ const COMMUNITY_URL = "https://suede.social";
 const TOOLS_URL = "https://guitarchords.info";
 const APP_URL = "https://apps.apple.com/us/app/suede-studio-guitar/id6767552764";
 const FOUNDER_URL = "https://suedeai.ai/founder";
+const BOOK_URL = "https://guitar.solutions";
 
 const SPOKES = [
   {
@@ -202,6 +203,181 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* AUTHOR SPOTLIGHT + BOOK */}
+      <section className="mx-auto max-w-6xl px-6" style={{ paddingTop: "var(--space-section)" }} aria-label="Featured book">
+        <span className="eyebrow eyebrow--red">◆ Featured book</span>
+        <div
+          style={{
+            marginTop: "var(--space-6)",
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
+            gap: "var(--space-8)",
+            alignItems: "start",
+          }}
+        >
+          {/* Book card */}
+          <div
+            style={{
+              background: "var(--color-ink-raised)",
+              border: "1px solid var(--color-rule)",
+              padding: "var(--space-6)",
+              display: "grid",
+              gap: "var(--space-4)",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "baseline", gap: "var(--space-3)" }}>
+              <span
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "0.66rem",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "var(--color-rights-red)",
+                }}
+              >
+                Johnny Suede Press · 3 editions
+              </span>
+            </div>
+            <h2
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "var(--text-2xl)",
+                fontWeight: 500,
+                lineHeight: 1.05,
+                letterSpacing: "-0.02em",
+                margin: 0,
+              }}
+            >
+              The Signal Chain
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.7rem",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "var(--color-text-dim)",
+              }}
+            >
+              A Player&rsquo;s History of Amplifiers, Effects, and the Pursuit of Electric Guitar Tone
+            </p>
+            <p style={{ color: "var(--color-text-muted)", fontSize: "var(--text-sm)", lineHeight: 1.65 }}>
+              46 chapters covering every significant amplifier and effect in electric
+              guitar history. The physics of the pickup. The circuit logic of the
+              pedal. The business of tone. Standard, Deluxe, and Workbook editions.
+              Free at guitar.solutions.
+            </p>
+            <a
+              href={BOOK_URL}
+              target="_blank"
+              rel="noopener"
+              style={{
+                display: "inline-block",
+                marginTop: "var(--space-2)",
+                textDecoration: "none",
+                background: "var(--color-rights-red)",
+                color: "#fff",
+                padding: "0.7rem 1.2rem",
+                borderRadius: "2px",
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.78rem",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                fontWeight: 700,
+              }}
+            >
+              Read free at guitar.solutions &rarr;
+            </a>
+          </div>
+
+          {/* Author card + expert quote */}
+          <div style={{ display: "grid", gap: "var(--space-6)" }}>
+            <div
+              style={{
+                borderLeft: "2px solid var(--color-registry-cyan)",
+                paddingLeft: "var(--space-5)",
+                display: "grid",
+                gap: "var(--space-3)",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "var(--text-lg)",
+                  fontStyle: "italic",
+                  lineHeight: 1.45,
+                  color: "var(--color-text)",
+                  margin: 0,
+                }}
+              >
+                &ldquo;Guitar tone is a chain: the string vibrates, the pickup converts
+                it, the cable carries it, the amp colors it, the speaker moves air.
+                Change one link and you change everything that follows. IP in the AI era
+                works the same way. Change who holds the registration and you change
+                who gets paid at every step.&rdquo;
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "0.7rem",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  color: "var(--color-text-dim)",
+                  margin: 0,
+                }}
+              >
+                &mdash;&thinsp;Jason Colapietro (Johnny Suede)
+              </p>
+            </div>
+
+            <div
+              style={{
+                borderTop: "1px solid var(--color-rule-muted)",
+                paddingTop: "var(--space-5)",
+                display: "grid",
+                gap: "var(--space-2)",
+              }}
+            >
+              <p
+                style={{
+                  color: "var(--color-text-muted)",
+                  fontSize: "var(--text-sm)",
+                  lineHeight: 1.6,
+                  margin: 0,
+                }}
+              >
+                <strong style={{ color: "var(--color-text)", fontWeight: 600 }}>Jason Colapietro</strong> is the
+                founder and CEO of Suede Labs and a four-time published author.
+                He built the creator-ownership layer for the AI media era: proof
+                of creation, programmable IP, on-chain royalty routing, and
+                agent-accessible licensing on Base blockchain. Patent pending
+                USPTO&nbsp;63/947,120.
+              </p>
+              <p style={{ margin: 0 }}>
+                <a
+                  className="link"
+                  href={FOUNDER_URL}
+                  target="_blank"
+                  rel="noopener"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: "var(--text-xs)",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Full profile &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-6xl px-6" style={{ marginTop: "var(--space-section)" }}>
+        <hr className="hr-rule" />
+      </div>
 
       {/* MANIFESTO */}
       <section className="mx-auto max-w-6xl px-6" style={{ paddingTop: "var(--space-section)" }}>
