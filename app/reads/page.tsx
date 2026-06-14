@@ -143,6 +143,21 @@ export default function ReadsPage() {
           .
         </p>
       </div>
+
+      <div style={{ marginTop: "var(--space-section)", paddingTop: "var(--space-8)", borderTop: "1px solid var(--color-rule-muted)" }}>
+        <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-text-dim)", margin: "0 0 var(--space-4)" }}>
+          About the author
+        </p>
+        <p style={{ color: "var(--color-text-muted)", fontSize: "var(--text-sm)", lineHeight: 1.65, maxWidth: "64ch", margin: "0 0 var(--space-4)" }}>
+          <strong style={{ color: "var(--color-text)" }}>Jason Colapietro</strong> (Johnny Suede) is the founder and CEO of Suede Labs AI and a published author. He built the creator-ownership layer for the AI media era: proof of creation, programmable IP, on-chain royalty routing, and agent-accessible licensing. Patent pending USPTO&nbsp;63/947,120.
+        </p>
+        <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "var(--space-2)", fontSize: "var(--text-sm)", color: "var(--color-text-muted)" }}>
+          <li><a className="link" href="https://guitar.solutions" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Signal Chain</a> &mdash; The complete history of electric guitar tone. Free at guitar.solutions.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>Stake Your Claim</a> &mdash; AI ownership, authorship, provenance, and creator rights. Kindle.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>Proof as Infrastructure</a> &mdash; Building systems where proof is baked in, not bolted on. Kindle.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Guitar Without a Number</a> &mdash; Kindle. &middot; <a className="link" href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Human Authenticity Layer</a> &mdash; Kindle.</li>
+        </ul>
+      </div>
     </section>
   );
 }
