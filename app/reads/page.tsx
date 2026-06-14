@@ -18,6 +18,13 @@ type Read = {
 
 const READS: Read[] = [
   {
+    href: "/ai-training-and-your-music",
+    title: "AI Training and Your Music: What Every Guitarist Needs to Know",
+    dek: "Your recordings, your tone, your style — AI models are being trained on all of it without asking. Here is what is happening, what the law currently says, and what the ownership layer looks like when it works.",
+    date: "June 14, 2026",
+    tag: "Music IP",
+  },
+  {
     href: "/who-owns-the-output-stage",
     title: "Who Owns the Output Stage",
     dek: "The output stage is the last point where a signal is still clearly yours. Howard Dumble understood this. AI broke it. On Dumble, the signal chain, and the infrastructure that registers creative ownership at the moment of creation.",
