@@ -18,6 +18,13 @@ type Read = {
 
 const READS: Read[] = [
   {
+    href: "/who-owns-the-output-stage",
+    title: "Who Owns the Output Stage",
+    dek: "The output stage is the last point where a signal is still clearly yours. Howard Dumble understood this. AI broke it. On Dumble, the signal chain, and the infrastructure that registers creative ownership at the moment of creation.",
+    date: "June 14, 2026",
+    tag: "Music IP",
+  },
+  {
     href: "/rights-metadata-dark-matter",
     title: "Rights Metadata Is the Dark Matter of the Creative Economy",
     dek: "It governs everything. Almost nobody can see it. What rights metadata is, why it breaks, and what a working infrastructure layer looks like — for every creator who has ever made something and wondered why the money disappeared.",
