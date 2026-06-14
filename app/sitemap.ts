@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE}/reads`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/rights-metadata-dark-matter`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/fender-stratocaster-lawsuit`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/rigs`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];

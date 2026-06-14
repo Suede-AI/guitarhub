@@ -18,6 +18,13 @@ type Read = {
 
 const READS: Read[] = [
   {
+    href: "/rights-metadata-dark-matter",
+    title: "Rights Metadata Is the Dark Matter of the Creative Economy",
+    dek: "It governs everything. Almost nobody can see it. What rights metadata is, why it breaks, and what a working infrastructure layer looks like — for every creator who has ever made something and wondered why the money disappeared.",
+    date: "June 14, 2026",
+    tag: "Music IP & Rights",
+  },
+  {
     href: "/fender-stratocaster-lawsuit",
     title: "The Fender Stratocaster Lawsuit, Explained",
     dek: "Fender won a copyright ruling on the 1954 Strat body and started mailing cease-and-desist letters. One landed on John Mayer's Silver Sky. What it means for players and builders.",
