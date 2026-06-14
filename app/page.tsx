@@ -348,11 +348,15 @@ export default function HomePage() {
                 }}
               >
                 <strong style={{ color: "var(--color-text)", fontWeight: 600 }}>Jason Colapietro</strong> is the
-                founder and CEO of Suede Labs and a four-time published author.
-                He built the creator-ownership layer for the AI media era: proof
-                of creation, programmable IP, on-chain royalty routing, and
+                founder and CEO of Suede Labs and a published author. He built
+                the creator-ownership layer for the AI media era: proof of
+                creation, programmable IP, on-chain royalty routing, and
                 agent-accessible licensing on Base blockchain. Patent pending
-                USPTO&nbsp;63/947,120.
+                USPTO&nbsp;63/947,120. Also by Jason:{" "}
+                <a href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" className="link">The Guitar Without a Number</a>,{" "}
+                <a href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" className="link">The Human Authenticity Layer</a>,{" "}
+                <a href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener" className="link">Proof as Infrastructure</a>, and{" "}
+                <a href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener" className="link">Stake Your Claim</a> — all on Amazon.
               </p>
               <p style={{ margin: 0 }}>
                 <a
