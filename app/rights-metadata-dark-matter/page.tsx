@@ -5,6 +5,9 @@ const FOUNDER_URL = "https://suedeai.ai/founder";
 const SUEDE_URL = "https://suedeai.ai";
 const COMMUNITY_URL = "https://suede.social";
 const SIGNAL_CHAIN_URL = "https://guitar.solutions";
+const GUITAR_WITHOUT_A_NUMBER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
+const HUMAN_AUTHENTICITY_LAYER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
+const STAKE_YOUR_CLAIM_URL = "https://www.amazon.com/dp/B0GRG8LGQQ";
 
 const TITLE = "Rights Metadata Is the Dark Matter of the Creative Economy";
 const DESCRIPTION =
@@ -470,6 +473,107 @@ export default function RightsMetadataPage() {
           </a>
           .
         </p>
+
+        {/* About the Author */}
+        <div
+          style={{
+            marginTop: "var(--space-10)",
+            background: "var(--color-ink-raised)",
+            border: "1px solid var(--color-rule)",
+            padding: "var(--space-6)",
+            display: "grid",
+            gap: "var(--space-4)",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: "0.7rem",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--color-rights-red)",
+            }}
+          >
+            ◆ About the author
+          </span>
+          <p style={{ color: "var(--color-text-muted)", fontSize: "var(--text-sm)", lineHeight: 1.65, margin: 0 }}>
+            <strong style={{ color: "var(--color-text)" }}>Jason Colapietro</strong> is the founder
+            and CEO of{" "}
+            <a className="link" href={SUEDE_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+              Suede Labs AI
+            </a>{" "}
+            and a four-time published author. He builds creator ownership infrastructure for
+            the AI media era: proof of creation, programmable IP, rights metadata that travels
+            with the work, and royalty routing on Base blockchain. Patent pending USPTO&nbsp;63/947,120.
+          </p>
+          <div style={{ display: "grid", gap: "var(--space-2)" }}>
+            <span
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.68rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                color: "var(--color-text-dim)",
+              }}
+            >
+              Books
+            </span>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                display: "grid",
+                gap: "var(--space-1)",
+                color: "var(--color-text-muted)",
+                fontSize: "var(--text-sm)",
+                lineHeight: 1.55,
+              }}
+            >
+              <li>
+                <a className="link" href={SIGNAL_CHAIN_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                  The Signal Chain
+                </a>{" "}
+                &mdash; A Player&rsquo;s History of Amplifiers, Effects, and the Pursuit of Electric Guitar Tone. Free at guitar.solutions.
+              </li>
+              <li>
+                <a className="link" href={GUITAR_WITHOUT_A_NUMBER_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                  The Guitar Without a Number
+                </a>{" "}
+                &mdash; Memoir-driven instruction for the self-taught player, with a music IP rights chapter no other guitar book includes. Kindle.
+              </li>
+              <li>
+                <a className="link" href={HUMAN_AUTHENTICITY_LAYER_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                  Suede Labs: The Human Authenticity Layer
+                </a>{" "}
+                &mdash; The thesis document for programmable IP infrastructure in the AI media era. Kindle.
+              </li>
+              <li>
+                <a className="link" href={STAKE_YOUR_CLAIM_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                  Stake Your Claim
+                </a>{" "}
+                &mdash; Hard truths about turning the AI era into a real asset. Kindle.
+              </li>
+            </ul>
+          </div>
+          <p style={{ margin: 0 }}>
+            <a
+              className="link"
+              href={FOUNDER_URL}
+              target="_blank"
+              rel="noopener"
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "var(--text-xs)",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                textDecoration: "none",
+              }}
+            >
+              Full profile at suedeai.ai/founder &rarr;
+            </a>
+          </p>
+        </div>
 
         <p style={{ marginTop: "var(--space-8)" }}>
           <Link className="link" href="/reads" style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
