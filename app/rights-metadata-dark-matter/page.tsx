@@ -8,6 +8,7 @@ const SIGNAL_CHAIN_URL = "https://guitar.solutions";
 const GUITAR_WITHOUT_A_NUMBER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
 const HUMAN_AUTHENTICITY_LAYER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
 const STAKE_YOUR_CLAIM_URL = "https://www.amazon.com/dp/B0GRG8LGQQ";
+const PROOF_AS_INFRASTRUCTURE_URL = "https://www.amazon.com/dp/B0GMB2VLXQ";
 
 const TITLE = "Rights Metadata Is the Dark Matter of the Creative Economy";
 const DESCRIPTION =
@@ -547,6 +548,12 @@ export default function RightsMetadataPage() {
                   Suede Labs: The Human Authenticity Layer
                 </a>{" "}
                 &mdash; The thesis document for programmable IP infrastructure in the AI media era. Kindle.
+              </li>
+              <li>
+                <a className="link" href={PROOF_AS_INFRASTRUCTURE_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                  Proof as Infrastructure
+                </a>{" "}
+                &mdash; Building systems where proof is baked in, not bolted on. Kindle.
               </li>
               <li>
                 <a className="link" href={STAKE_YOUR_CLAIM_URL} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
