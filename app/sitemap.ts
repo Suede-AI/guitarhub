@@ -13,5 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/guitar-samples-ai-training`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/session-musicians-publishing-royalties`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/how-to-register-a-guitar-riff`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/ai-training-and-your-music`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/who-owns-the-output-stage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

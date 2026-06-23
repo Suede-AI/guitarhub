@@ -28,12 +28,21 @@ export const metadata: Metadata = {
       "The open guitar hub. Rig rundowns, gear and rights explainers, and a community grounded in real rigs. Part of Suede Social.",
     siteName: "GuitarHub",
     url: SITE_URL,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "GuitarHub — Real Rigs, Real Gear, Real Talk",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "GuitarHub — Real Rigs, Real Gear, Real Talk",
     description:
       "The open guitar hub. Rig rundowns, gear and rights explainers, and a community grounded in real rigs.",
+    images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },
 };
