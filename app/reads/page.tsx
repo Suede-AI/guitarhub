@@ -18,6 +18,27 @@ type Read = {
 
 const READS: Read[] = [
   {
+    href: "/guitar-samples-ai-training",
+    title: "What Happens to Your Guitar Samples in AI Training",
+    dek: "AI music models are trained on guitar samples, loops, and recordings — often without attribution, compensation, or consent. Here is what the pipeline actually looks like, what rights you have right now, and what a real ownership layer changes.",
+    date: "June 23, 2026",
+    tag: "Music IP",
+  },
+  {
+    href: "/session-musicians-publishing-royalties",
+    title: "Why Session Musicians Are Losing Publishing Royalties in 2026",
+    dek: "Session guitarists laid the sonic foundation for decades of recorded music. Most never received a publishing royalty. Here is why the system is designed to exclude them, how AI is making it worse, and what the ownership layer needs to look like going forward.",
+    date: "June 23, 2026",
+    tag: "Music IP & Rights",
+  },
+  {
+    href: "/how-to-register-a-guitar-riff",
+    title: "How to Register a Guitar Riff as Intellectual Property",
+    dek: "A guitar riff can be registered as intellectual property, but most guitarists have no idea how. The practical walkthrough: what is protectable, what is not, how to file with the US Copyright Office, and how a registry-backed provenance record extends protection into the AI era.",
+    date: "June 23, 2026",
+    tag: "Music IP & Rights",
+  },
+  {
     href: "/ai-training-and-your-music",
     title: "AI Training and Your Music: What Every Guitarist Needs to Know",
     dek: "Your recordings, your tone, your style — AI models are being trained on all of it without asking. Here is what is happening, what the law currently says, and what the ownership layer looks like when it works.",

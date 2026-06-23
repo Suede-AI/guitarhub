@@ -10,5 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/rights-metadata-dark-matter`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/fender-stratocaster-lawsuit`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/rigs`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/guitar-samples-ai-training`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/session-musicians-publishing-royalties`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/how-to-register-a-guitar-riff`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 }
