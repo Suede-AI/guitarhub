@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const COLLECTION_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Reads — GuitarHub",
+  url: "https://guitarhub.org/reads",
+  description: "Editorial reads on guitar gear, music rights, and creator ownership.",
+  isPartOf: { "@type": "WebSite", url: "https://guitarhub.org" },
+};
+
 export const metadata: Metadata = {
   title: "Reads — Gear, Rights, and the Business of Guitar",
   description:
@@ -70,6 +79,11 @@ const READS: Read[] = [
 
 export default function ReadsPage() {
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(COLLECTION_JSON_LD) }}
+    />
     <section className="mx-auto max-w-3xl px-6" style={{ paddingTop: "var(--space-section)" }}>
       <span className="eyebrow eyebrow--red">
         <span aria-hidden>◆</span>&nbsp;&nbsp;Reads
@@ -158,7 +172,7 @@ export default function ReadsPage() {
         <p style={{ marginTop: "var(--space-6)", color: "var(--color-text-dim)", fontSize: "var(--text-sm)", lineHeight: 1.65, maxWidth: "64ch" }}>
           Want to talk through any of these with players running real rigs? The
           conversation lives on{" "}
-          <a className="link" href="https://suede.social" target="_blank" rel="noopener">
+          <a className="link" href="https://suede.social" target="_blank" rel="noopener noreferrer">
             Suede Social
           </a>
           .
@@ -173,12 +187,13 @@ export default function ReadsPage() {
           <strong style={{ color: "var(--color-text)" }}>Jason Colapietro</strong> (Johnny Suede) is the founder and CEO of Suede Labs AI and a published author. He built the creator-ownership layer for the AI media era: proof of creation, programmable IP, on-chain royalty routing, and agent-accessible licensing. Patent pending USPTO&nbsp;63/947,120.
         </p>
         <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "var(--space-2)", fontSize: "var(--text-sm)", color: "var(--color-text-muted)" }}>
-          <li><a className="link" href="https://guitar.solutions" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Signal Chain</a> &mdash; The complete history of electric guitar tone. Free at guitar.solutions.</li>
-          <li><a className="link" href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>Stake Your Claim</a> &mdash; AI ownership, authorship, provenance, and creator rights. Kindle.</li>
-          <li><a className="link" href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>Proof as Infrastructure</a> &mdash; Building systems where proof is baked in, not bolted on. Kindle.</li>
-          <li><a className="link" href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Guitar Without a Number</a> &mdash; Kindle. &middot; <a className="link" href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener" style={{ textDecoration: "none" }}>The Human Authenticity Layer</a> &mdash; Kindle.</li>
+          <li><a className="link" href="https://guitar.solutions" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>The Signal Chain</a> &mdash; The complete history of electric guitar tone. Free at guitar.solutions.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GRG8LGQQ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>Stake Your Claim</a> &mdash; AI ownership, authorship, provenance, and creator rights. Kindle.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GMB2VLXQ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>Proof as Infrastructure</a> &mdash; Building systems where proof is baked in, not bolted on. Kindle.</li>
+          <li><a className="link" href="https://www.amazon.com/dp/B0GD5FX6N6" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>The Guitar Without a Number</a> &mdash; Kindle. &middot; <a className="link" href="https://www.amazon.com/dp/B0GMBBWHMQ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>The Human Authenticity Layer</a> &mdash; Kindle.</li>
         </ul>
       </div>
     </section>
+    </>
   );
 }

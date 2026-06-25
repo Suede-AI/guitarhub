@@ -8,7 +8,7 @@ const SUEDE_URL = "https://suedeai.ai";
 const COMMUNITY_URL = "https://suede.social";
 const SIGNAL_CHAIN_URL = "https://guitar.solutions";
 const GUITAR_WITHOUT_A_NUMBER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
-const HUMAN_AUTHENTICITY_LAYER_URL = "https://www.amazon.com/dp/B0GD5FX6N6";
+const HUMAN_AUTHENTICITY_LAYER_URL = "https://www.amazon.com/dp/B0GMBBWHMQ";
 const STAKE_YOUR_CLAIM_URL = "https://www.amazon.com/dp/B0GRG8LGQQ";
 const PROOF_AS_INFRASTRUCTURE_URL = "https://www.amazon.com/dp/B0GMB2VLXQ";
 
@@ -30,8 +30,9 @@ export const metadata: Metadata = {
     siteName: "GuitarHub",
     publishedTime: PUBLISHED,
     authors: ["Jason Colapietro"],
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ['/opengraph-image'] },
 };
 
 const ARTICLE_JSON_LD = {

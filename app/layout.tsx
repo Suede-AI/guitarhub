@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     "GuitarHub is the open guitar hub: rig rundowns, gear and rights explainers, and a community grounded in real rigs. The front door to Suede Social, by Suede Labs.",
   applicationName: "GuitarHub",
   authors: [{ name: "Jason Colapietro" }],
-  alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
     title: "GuitarHub — Real Rigs, Real Gear, Real Talk",
@@ -55,6 +54,12 @@ const WEBSITE_JSON_LD = {
   inLanguage: "en",
   description:
     "The open guitar hub: rig rundowns, gear and rights explainers, and a community grounded in real rigs.",
+  image: {
+    "@type": "ImageObject",
+    url: "https://guitarhub.org/opengraph-image",
+    width: 1200,
+    height: 630,
+  },
   creator: {
     "@type": "Person",
     name: "Jason Colapietro",
@@ -160,13 +165,13 @@ function SiteHeader() {
           <Link href="/reads" className="link" style={navLinkStyle}>
             Reads
           </Link>
-          <a href={TOOLS_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener">
+          <a href={TOOLS_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener noreferrer">
             Tools&#8599;
           </a>
           <a
             href={COMMUNITY_URL}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             style={{
               textDecoration: "none",
               color: "var(--color-ink)",
@@ -208,10 +213,10 @@ function SiteFooter() {
             <Link href="/reads" className="link" style={navLinkStyle}>
               Reads
             </Link>
-            <a href={TOOLS_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener">
+            <a href={TOOLS_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener noreferrer">
               Guitar Tools
             </a>
-            <a href={COMMUNITY_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener">
+            <a href={COMMUNITY_URL} className="link" style={navLinkStyle} target="_blank" rel="noopener noreferrer">
               Community
             </a>
           </nav>
@@ -234,18 +239,18 @@ function SiteFooter() {
         >
           <span>
             GuitarHub is the open front door to{" "}
-            <a className="link" href={COMMUNITY_URL} target="_blank" rel="noopener" style={navLinkStyle}>
+            <a className="link" href={COMMUNITY_URL} target="_blank" rel="noopener noreferrer" style={navLinkStyle}>
               Suede Social
             </a>
             , a guitar community grounded in real rigs.
           </span>
           <span>
             A{" "}
-            <a className="link" href={SUEDE_URL} target="_blank" rel="noopener" style={navLinkStyle}>
+            <a className="link" href={SUEDE_URL} target="_blank" rel="noopener noreferrer" style={navLinkStyle}>
               Suede Labs
             </a>
             {" project by "}
-            <a className="link" href={FOUNDER_URL} target="_blank" rel="noopener" style={navLinkStyle}>
+            <a className="link" href={FOUNDER_URL} target="_blank" rel="noopener noreferrer" style={navLinkStyle}>
               Jason Colapietro
             </a>
             {" · "}

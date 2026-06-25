@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const WEBPAGE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Rigs — GuitarHub",
+  url: "https://guitarhub.org/rigs",
+  description: "Guitar rigs from working players — signal chains, gear choices, and the decisions behind them.",
+};
+
 export const metadata: Metadata = {
   title: "Real Rigs — The Signal Chains Players Actually Run",
   description:
@@ -12,6 +20,11 @@ const COMMUNITY_URL = "https://suede.social";
 
 export default function RigsPage() {
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_JSON_LD) }}
+    />
     <section className="mx-auto max-w-3xl px-6" style={{ paddingTop: "var(--space-section)" }}>
       <span className="eyebrow eyebrow--cyan">
         <span aria-hidden>⊕</span>&nbsp;&nbsp;Real Rigs
@@ -42,6 +55,18 @@ export default function RigsPage() {
         players reach for, posted by the players who run them, with the routing
         and the reasons. That is the whole idea behind GuitarHub and its
         community, Suede Social.
+      </p>
+
+      <p
+        style={{
+          maxWidth: "60ch",
+          color: "var(--color-text-muted)",
+          fontSize: "var(--text-base)",
+          lineHeight: 1.65,
+          marginTop: "var(--space-6)",
+        }}
+      >
+        Guitar rigs from working players — signal chains, gear choices, and the decisions behind them. Rigs are submitted through Suede Social.
       </p>
 
       <div style={{ marginTop: "var(--space-12)" }}>
