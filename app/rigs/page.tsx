@@ -137,5 +137,6 @@ export default function RigsPage() {
         </Link>
       </p>
     </section>
+    </>
   );
 }
