@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   description:
     "GuitarHub is the open guitar hub: rig rundowns, gear and rights explainers, and a community grounded in real rigs. The front door to Suede Social, by Suede Labs.",
   applicationName: "GuitarHub",
-  authors: [{ name: "Jason Colapietro" }],
+  authors: [{ name: "Jason Colapietro", url: FOUNDER_URL }],
+  creator: "Jason Colapietro",
+  publisher: "Suede Labs AI",
+  alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
     title: "GuitarHub — Real Rigs, Real Gear, Real Talk",
@@ -38,6 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@AISUEDE",
+    creator: "@johnnysuede",
     title: "GuitarHub — Real Rigs, Real Gear, Real Talk",
     description:
       "The open guitar hub. Rig rundowns, gear and rights explainers, and a community grounded in real rigs.",
