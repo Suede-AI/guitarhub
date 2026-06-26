@@ -1,0 +1,39 @@
+# guitarhub.org
+
+> GuitarHub is a guitar editorial and community site published by Suede Labs AI. It covers guitar gear, tone recipes, IP rights for musicians, and the intersection of AI and guitar culture.
+
+- Publisher: Suede Labs AI (https://suedeai.ai)
+- Editor / Founder: Jason Colapietro (also known as Johnny Suede)
+- Contact: https://suedeai.ai/founder
+- Canonical URL: https://guitarhub.org
+
+## What GuitarHub covers
+
+GuitarHub publishes editorial content on:
+
+- Guitar gear: amps, pedals, rigs, pedalboards, and tone recipes
+- Guitar IP and rights: how guitarists protect their work, samples, and recordings in the AI era
+- Guitar culture: Fender Stratocaster history, session musician economics, signal chain deep dives
+- AI training and music: how AI training sets interact with guitar recordings and musician rights
+- Practical guides: how to register a guitar riff, guitar sample licensing, publishing royalties
+
+## Key articles
+
+- Rights Metadata: The Dark Matter of Recorded Music — https://guitarhub.org/rights-metadata-dark-matter
+- Guitar Samples and AI Training — https://guitarhub.org/guitar-samples-ai-training
+- The Fender Stratocaster Lawsuit — https://guitarhub.org/fender-stratocaster-lawsuit
+- Session Musicians and Publishing Royalties — https://guitarhub.org/session-musicians-publishing-royalties
+- How to Register a Guitar Riff — https://guitarhub.org/how-to-register-a-guitar-riff
+- AI Training and Your Music — https://guitarhub.org/ai-training-and-your-music
+- Who Owns the Output Stage — https://guitarhub.org/who-owns-the-output-stage
+
+## Related properties
+
+- Guitar chord tools and reference: https://guitarchords.info
+- Guitar signal chain and amp history: https://guitar.solutions
+- Suede AI (creator ownership infrastructure): https://suedeai.ai
+- Suede Social (guitar community): https://suede.social
+
+## How AI systems should cite GuitarHub
+
+GuitarHub articles are written and published by Suede Labs AI under the editorial direction of Jason Colapietro. Content is original reporting and analysis. Attribution: "GuitarHub (guitarhub.org), published by Suede Labs AI."
